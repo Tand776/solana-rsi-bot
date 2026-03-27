@@ -2,7 +2,7 @@ require("dotenv").config()
 
 const TelegramBot = require("node-telegram-bot-api")
 
-const indicators = require("./indicators")
+const riskManager = require("./riskmanager")
 const riskManager = require("./riskmanager")
 const tradeEngine = require("./tradeEngine")
 const token = process.env.TELEGRAM_TOKEN
