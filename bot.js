@@ -46,6 +46,24 @@ bot.sendMessage(msg.chat.id,
 
 })
 
+bot.onText(/\/balance/, async (msg) => {
+
+const balance = 10 // temporary example
+
+bot.sendMessage(msg.chat.id,
+`💰 Wallet Balance: ${balance} SOL`
+)
+
+})
+
+bot.onText(/\/profit/, (msg) => {
+
+bot.sendMessage(msg.chat.id,
+`📈 Total Profit: 0 SOL`
+)
+
+})
+
 async function tradingLoop(){
 
 if(!running) return
